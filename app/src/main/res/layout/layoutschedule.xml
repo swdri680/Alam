@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="날짜 및 시간 설정"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp">
+
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/timePicker"
+            android:timePickerMode="spinner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="월"
+                android:id="@+id/cb1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="화"
+                android:id="@+id/cb2"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수"
+                android:id="@+id/cb3"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="목"
+                android:id="@+id/cb4"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="금"
+                android:id="@+id/cb5"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="토"
+                android:id="@+id/cb6"
+                android:textSize="20dp"
+                android:textColor="#dd4747"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일"
+                android:textColor="#dd4747"
+                android:id="@+id/cb7"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/editText"
+            android:hint="할 일"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="벨소리"
+            android:id="@+id/toggleBell" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="진동"
+            android:id="@+id/toggleVibe" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="추가"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="#40a5f9"
+        android:gravity="center"
+        android:layout_weight="5" />
+
+
+</LinearLayout>
